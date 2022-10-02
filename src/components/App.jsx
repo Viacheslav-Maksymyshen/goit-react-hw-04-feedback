@@ -36,7 +36,7 @@ export default function App() {
     return Math.round(positivePercentage);
   };
 
-  const options = ['good', 'neutral', 'bad'];
+  const options = Object.keys({ good, neutral, bad });
   return (
     <div className={css.container}>
       <div className={css.feedbacks}>
